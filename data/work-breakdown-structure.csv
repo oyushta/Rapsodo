@@ -1,0 +1,22 @@
+Workstream,Task,Owner,Estimate,Prerequisite,Critical Path
+Discovery,Confirm V1 scope sports coverage and success metrics,"PM, BA, TPM",M,Kickoff,Yes
+Discovery,Define open item owners and decision deadlines,TPM,S,Kickoff,Yes
+UX/UI,Map post-session goals AI and benchmark flows,UX/UI Designer,M,V1 scope,No
+UX/UI,Design loading empty error premium-gated and feature-flag states,UX/UI Designer,M,Flow map,No
+API Design,Define session summary goals AI tip and benchmark contracts,"Backend, Mobile Leads",L,Metric definitions,Yes
+API Design,Publish mock API responses and error schema,Backend,M,API contract draft,Yes
+Data,Validate historical data quality and metric availability,Data Engineer,M,V1 metric list,Yes
+Data,Define benchmark cohort and anonymization rules,"Data Engineer, Product, Legal",L,Privacy decision,Yes
+Backend,Build session summary and goal APIs,Backend,L,API sign-off,Yes
+Backend,Implement premium entitlement checks,Backend,M,Entitlement rules,No
+Backend,Implement AI integration with timeout retry and fallback,Backend,L,Provider decision,Yes
+Backend,Implement benchmark endpoint and aggregation integration,"Backend, Data",L,Benchmark logic,Yes
+Mobile,Implement session summary UI and API integration,"iOS, Android",L,"UX handoff, mock APIs",Yes
+Mobile,Implement goal create edit delete progress flows,"iOS, Android",L,"UX handoff, goal API",No
+Mobile,Implement premium AI tip UI and fallback states,"iOS, Android",M,"AI API, premium rules",Yes
+Mobile,Implement benchmark visualization,"iOS, Android",M,"Benchmark API, UX charts",Yes
+QA,Build test plan and seeded data matrix,"QA, BA",M,"Requirements, API draft",No
+QA,Automate critical regression flows,QA,L,Stable mock APIs,Yes
+QA,Execute integration cross-platform AI failure and performance tests,QA,L,Feature complete,Yes
+Release,Prepare feature flags monitoring rollback and app store checklist,"TPM, Engineering, QA",M,Development complete,Yes
+Release,Submit builds and monitor rollout,"Mobile, TPM, QA",M,QA sign-off,Yes
