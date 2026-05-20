@@ -6,11 +6,18 @@ This repository contains an AI-assisted delivery planning package for the propos
 
 ## Deliverables
 
+- [Sample Web App](app/index.html)
 - [Delivery Readiness Assessment](docs/01-delivery-readiness-assessment.md)
 - [Delivery Plan](docs/02-delivery-plan.md)
 - [Risk and Issue Log](docs/03-risk-and-issue-log.md)
 - [AI Workflow Documentation](docs/04-ai-workflow-documentation.md)
 - [Work Breakdown Structure](data/work-breakdown-structure.csv)
+
+## Sample Web App
+
+The `app/` folder contains a static prototype based on the feature requirements. It demonstrates the post-session summary, goal tracking, premium AI coaching, benchmark comparison, feature flags, and release readiness signals.
+
+Open [app/index.html](app/index.html) in a browser to view the prototype.
 
 ## Feature Summary
 
