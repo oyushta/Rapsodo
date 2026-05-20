@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Performance Coaching Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <div><strong>Rapsodo</strong><span>Coaching Hub</span></div>
+        </div>
+        <nav class="nav-list">
+          <button class="nav-item active" type="button" data-section="summary" title="Session summary"><span aria-hidden="true">S</span><span>Summary</span></button>
+          <button class="nav-item" type="button" data-section="goals" title="Goal tracking"><span aria-hidden="true">G</span><span>Goals</span></button>
+          <button class="nav-item" type="button" data-section="ai" title="AI coaching"><span aria-hidden="true">AI</span><span>AI Tips</span></button>
+          <button class="nav-item" type="button" data-section="benchmarks" title="Benchmark comparison"><span aria-hidden="true">B</span><span>Benchmarks</span></button>
+        </nav>
+        <div class="release-state"><span class="status-dot"></span><span>Q3 release candidate</span></div>
+      </aside>
+      <main class="workspace">
+        <header class="topbar">
+          <div><p class="eyebrow">Post-session review</p><h1>Performance Coaching Hub</h1></div>
+          <div class="top-actions">
+            <label class="toggle"><input id="premiumToggle" type="checkbox" checked /><span>Premium</span></label>
+            <select id="athleteSelect" aria-label="Select athlete"><option value="maya">Maya, Baseball</option><option value="leo">Leo, Golf</option><option value="aria">Aria, Cricket</option></select>
+          </div>
+        </header>
+        <section class="hero-panel" id="summary">
+          <div class="session-visual" aria-label="Session trend visualization"><canvas id="trendCanvas" width="720" height="360"></canvas><div class="session-badge"><span>Last session</span><strong id="sessionDate">May 20</strong></div></div>
+          <div class="summary-copy">
+            <p class="eyebrow">Session Summary</p><h2 id="summaryTitle">Strong start, late-session speed drop</h2>
+            <p id="summaryInsight">Average ball speed dropped 8% in the second half. The pattern suggests possible fatigue after rep 24.</p>
+            <div class="metric-grid">
+              <div class="metric-tile"><span>Ball speed</span><strong id="speedMetric">142 mph</strong><small id="speedDelta">+4 vs last session</small></div>
+              <div class="metric-tile"><span>Accuracy</span><strong id="accuracyMetric">78%</strong><small id="accuracyDelta">-3 second half</small></div>
+              <div class="metric-tile"><span>Consistency</span><strong id="consistencyMetric">84%</strong><small id="consistencyDelta">stable</small></div>
+            </div>
+          </div>
+        </section>
+        <section class="content-grid">
+          <article class="panel" id="goals"><div class="panel-heading"><div><p class="eyebrow">Goal Tracking</p><h2>Active goals</h2></div><button class="icon-button" type="button" id="addGoalBtn" title="Add sample goal" aria-label="Add sample goal">+</button></div><div id="goalList" class="goal-list"></div></article>
+          <article class="panel ai-panel" id="ai"><div class="panel-heading"><div><p class="eyebrow">Premium AI Coaching</p><h2>Next recommendation</h2></div><span class="pill" id="aiStatus">Active</span></div><div id="aiTip" class="ai-tip"></div><div class="ai-controls"><button type="button" id="regenerateTip">Regenerate</button><button type="button" id="simulateFailure">Simulate failure</button></div></article>
+          <article class="panel" id="benchmarks"><div class="panel-heading"><div><p class="eyebrow">Athlete Benchmarking</p><h2>Similar-level comparison</h2></div><span class="pill muted">Anonymized</span></div><div class="benchmark-row"><span>Ball speed</span><div class="benchmark-track"><span id="speedBar"></span></div><strong id="speedRank">Top 22%</strong></div><div class="benchmark-row"><span>Accuracy</span><div class="benchmark-track"><span id="accuracyBar"></span></div><strong id="accuracyRank">Top 38%</strong></div><div class="benchmark-row"><span>Consistency</span><div class="benchmark-track"><span id="consistencyBar"></span></div><strong id="consistencyRank">Top 18%</strong></div></article>
+          <article class="panel release-panel"><div class="panel-heading"><div><p class="eyebrow">Release Readiness</p><h2>Feature flags</h2></div></div><div class="flag-list"><label><input type="checkbox" checked /> Session summary</label><label><input type="checkbox" checked /> Goal tracking</label><label><input type="checkbox" checked /> AI coaching</label><label><input type="checkbox" checked /> Benchmarking</label></div><div class="readiness"><span><strong>QA</strong> regression planned</span><span><strong>API</strong> contract frozen</span><span><strong>Data</strong> cohort review pending</span></div></article>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
